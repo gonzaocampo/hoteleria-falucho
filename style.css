@@ -1,0 +1,142 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    overflow: auto;
+}
+
+/* menu */
+
+#menu a {
+    font-size: 16px;
+    color: #3f3f33;
+    
+}
+#menu button {
+    font-size: 16px;
+    
+}
+
+
+/* imagenes slide */ 
+.carousel-inner {
+    max-height: 50rem;
+    object-fit: cover;
+}
+
+
+
+/* Media queries */
+@media (max-width:768px ) {
+     #intro {
+        width: 90%;
+    
+     }
+}
+
+.card-border {
+    border: solid 10px white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
+.card-border:hover {
+    transform: scale(1.05);
+} 
+
+
+/**************** contacto ***********/
+
+.body_contacto {
+    background-color: #e5e5f7;
+
+background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 10px 10px, linear-gradient(#008733 0.8px, transparent 0.8px) 0 -0.4px, linear-gradient(90deg, #008733 0.8px, #e5e5f7 0.8px) -0.4px 0;
+background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
+display: flex;
+min-height: 100vh;
+}
+.form_contacto {
+    background-color: white;
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+    text-align: center;
+}
+.form_titulo {
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+.form_parrafo {
+    font-weight: 300;
+}
+.form_links {
+    font-weight: 400;
+    color: black;
+}
+.form_contenedor {
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+}
+.form_item {
+    position: relative;
+    --color: #5757577e;
+}
+.form_input {
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #5757577e
+}
+.form_input:focus + .form_label,
+.form_input:not(:placeholder-shown) + .form_label {
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: #008733;
+}
+
+
+
+.form_label {
+    color: #5757577e;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+.form_submit {
+    background: #008733;
+    color: white;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 4em;
+    border: none;
+    border-radius: .5em;
+}
+.form_linea {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #008733;
+}
+
+@media (max-width:425px) {
+    .form_titulo {
+font-size: 1.8rem;
+    }
+
+}
